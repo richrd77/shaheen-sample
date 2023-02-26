@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,300;8..144,500;8..144,900&family=Russo+One&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-color: white;
+    --color: black;
+    --pri-color: #86be54;
+    --warn-color: red;
+}
+
+body {
+    font-family: "Roboto Serif", serif;
+    .material-symbols-outlined {
+        font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+    }
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+    overflow-x: hidden;
+    > header {
+        box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.3);
+        > nav {
+            display: flex;
+            justify-content: space-between;
+            height: 5em;
+            padding: 1em;
+            > section.logo {
+                height: 100%;
+                flex: 0.25;
+                > svg {
+                    font-family: "Russo One", sans-serif;
+                    display: inline-block;
+                    height: 100%;
+                    width: 100%;
+                    font-size: inherit;
+                    > text {
+                        display: block;
+                        height: 100%;
+                        width: 100%;
+                        transform-origin: center;
+                        transform: translate(0, 70%);
+                        font-size: 1.7em;
+                    }
+                }
+            }
+            > ul {
+                list-style: none;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                flex: 0.75;
+                > li {
+                    > a.emp-link {
+                        background-color: var(--pri-color);
+                        color: var(--color);
+                        padding: 1em;
+                        border-radius: 3px;
+                    }
+                }
+            }
+        }
+    }
+    > main {
+        min-height: calc(100vh - 3em);
+        padding: 1em;
+    }
+    > footer {
+        background-color: var(--color);
+        color: var(--bg-color);
+        padding: 1em;
+        > div.footer-info {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr;
+            gap: 1em;
+            justify-items: center;
+            align-items: center;
+            > div.address {
+                > span.location-map {
+                    font-size: 3em;
+                    cursor: pointer;
+                }
+                > address {
+                }
+            }
+            > div.socials {
+                > ul {
+                    list-style: none;
+                    > li {
+                        margin: 1em 0;
+                        > a {
+                            i:hover {
+                                color: var(--pri-color);
+                            }
+                        }
+                    }
+                }
+            }
+            > div.copy {
+                display: flex;
+                flex-direction: column;
+                > span.name {
+                }
+                > span.dev {
+                    font-size: 0.6em;
+                    margin-top: 0.75em;
+                }
+            }
+        }
+        > div.footer-branches {
+        }
+    }
+}
+
+// svg {
+//     font-family: "Russo One", sans-serif;
+//     position: absolute;
+//     width: 100%;
+//     height: 100%;
+// }
+// svg text {
+//     text-transform: uppercase;
+//     animation: stroke 5s 1 forwards;
+//     stroke-width: 2;
+//     stroke: #365fa0;
+//     font-size: 100px;
+// }
+// @keyframes stroke {
+//     0% {
+//         fill: rgba(72, 138, 204, 1);
+//         // fill: rgba(72, 138, 20, 0);
+//         stroke: rgba(54, 95, 160, 1);
+//         stroke-dashoffset: 25%;
+//         stroke-dasharray: 0 50%;
+//         stroke-width: 2;
+//     }
+//     70% {
+//         // fill: rgba(72, 138, 20, 0);
+//         fill: rgba(72, 138, 204, 1);
+//         stroke: rgba(54, 95, 160, 1);
+//     }
+//     80% {
+//         fill: rgba(72, 138, 204, 1);
+//         // fill: rgba(72, 138, 20, 0);
+//         stroke: rgba(54, 95, 160, 1);
+//         stroke-width: 3;
+//     }
+//     100% {
+//         fill: rgba(72, 138, 204, 1);
+//         stroke: rgba(54, 95, 160, 0);
+//         stroke-dashoffset: -25%;
+//         stroke-dasharray: 50% 0;
+//         stroke-width: 0;
+//     }
+// }

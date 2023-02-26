@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,300;8..144,500;8..144,900&family=Russo+One&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-color: white;
+  --color: black;
+  --pri-color: #86be54;
+  --warn-color: red;
+}
+
+body {
+  font-family: "Roboto Serif", serif;
+  overflow-x: hidden;
+}
+body .material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+}
+body a {
+  text-decoration: none;
+  color: inherit;
+}
+body > header {
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.3);
+}
+body > header > nav {
+  display: flex;
+  justify-content: space-between;
+  height: 5em;
+  padding: 1em;
+}
+body > header > nav > section.logo {
+  height: 100%;
+  flex: 0.25;
+}
+body > header > nav > section.logo > svg {
+  font-family: "Russo One", sans-serif;
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  font-size: inherit;
+}
+body > header > nav > section.logo > svg > text {
+  display: block;
+  height: 100%;
+  width: 100%;
+  transform-origin: center;
+  transform: translate(0, 70%);
+  font-size: 1.7em;
+}
+body > header > nav > ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex: 0.75;
+}
+body > header > nav > ul > li > a.emp-link {
+  background-color: var(--pri-color);
+  color: var(--color);
+  padding: 1em;
+  border-radius: 3px;
+}
+body > main {
+  min-height: calc(100vh - 3em);
+  padding: 1em;
+}
+body > footer {
+  background-color: var(--color);
+  color: var(--bg-color);
+  padding: 1em;
+}
+body > footer > div.footer-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 1em;
+  justify-items: center;
+  align-items: center;
+}
+body > footer > div.footer-info > div.address > span.location-map {
+  font-size: 3em;
+  cursor: pointer;
+}
+body > footer > div.footer-info > div.socials > ul {
+  list-style: none;
+}
+body > footer > div.footer-info > div.socials > ul > li {
+  margin: 1em 0;
+}
+body > footer > div.footer-info > div.socials > ul > li > a i:hover {
+  color: var(--pri-color);
+}
+body > footer > div.footer-info > div.copy {
+  display: flex;
+  flex-direction: column;
+}
+body > footer > div.footer-info > div.copy > span.dev {
+  font-size: 0.6em;
+  margin-top: 0.75em;
+}/*# sourceMappingURL=common.css.map */
