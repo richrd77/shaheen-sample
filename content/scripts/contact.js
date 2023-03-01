@@ -1,0 +1,1 @@
+document.querySelector('input[type=submit]').addEventListener('click', e => e.preventDefault());

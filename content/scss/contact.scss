@@ -1,0 +1,117 @@
+@mixin card {
+    border-radius: 4px;
+    box-shadow: 0 0 8px 0 #00000012;
+    background-color: var(--card-bg-color);
+}
+
+main.contact-main {
+    > section.cont-wrapper {
+        width: 80%;
+        height: 100%;
+        min-height: 400px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 1em;
+        padding: 1em;
+        > div.branch-det {
+            @include card();
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            > ul.socials {
+                list-style: none;
+                > li {
+                    margin: 0.6em 0;
+                    > a {
+                        > i {
+                        }
+                        > span.cont-text {
+                            margin-left: 10px;
+                        }
+                    }
+                }
+                > li:nth-of-type(2) {
+                    > a {
+                        > i.fa-regular.fa-envelope {
+                        }
+                        > span.cont-text {
+                        }
+                    }
+                }
+            }
+        }
+        > div.contact {
+            @include card();
+            padding: 1em;
+            > form.contact-frm {
+                > h1 {
+                    text-align: center;
+                    margin-bottom: 20px;
+                }
+                > section.in-section {
+                    border: 1px solid #0000001f;
+                    margin: 1em 0;
+                    border-radius: 4px;
+                    padding: 1em;
+                    position: relative;
+                    &:nth-child(2) {
+                        display: grid;
+                        grid-template-columns: 1fr 1fr;
+                        grid-template-rows: 1fr 1fr;
+                    }
+                    &:nth-child(3) {
+                        display: grid;
+                        grid-template-columns: 1fr 1fr;
+                        grid-template-rows: 1fr;
+                    }
+                    // &:nth-child(1) {
+                    //     // display: grid;
+                    //     // grid-template-columns: 1fr 1fr;
+                    //     // grid-template-rows: 1fr 1fr;
+                    // }
+                    > h4.section-legend {
+                        position: absolute;
+                        top: -12px;
+                        background-color: var(--pri-light-color);
+                        padding: 0 1em;
+                        z-index: 2;
+                    }
+                    > div.contact-control {
+                        position: relative;
+                        border: 1px solid #0000001f;
+                        width: fit-content;
+                        margin: 1em 0;
+                        &:focus-within {
+                            box-shadow: 0 0 4px 0 var(--pri-color);
+                        }
+                        > label.contact-fld-name {
+                            font-size: 0.7rem;
+                            position: absolute;
+                            top: -8px;
+                            background-color: var(--pri-light-color);
+                            padding: 0 1em;
+                            z-index: 2;
+                            user-select: none;
+                        }
+                        > input,
+                        select,
+                        textarea {
+                            padding: 15px 10px;
+                            border: transparent;
+                            outline: none;
+                            background-color: #f0f0f040;
+                        }
+                    }
+                }
+                > section.action {
+                    text-align: right;
+                    > input {
+
+                    }
+                }
+            }
+        }
+    }
+}

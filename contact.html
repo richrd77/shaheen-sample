@@ -6,8 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="./content/img/logo.png">
-    <title>Home | Shaheen Institutions</title>
+    <title>Contact | Shaheen Institutions</title>
     <link rel="stylesheet" href="content/css/common.css">
+    <link rel="stylesheet" href="content/css/contact.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -29,7 +30,67 @@
             </ul>
         </nav>
     </header>
-    <main>Home Page</main>
+    <main class="contact-main">
+        <section class="cont-wrapper">
+            <div class="branch-det">
+                <ul class="socials">
+                    <li><a href="tel:+919999999999"><i class="fa-solid fa-phone"></i><span class="cont-text">Call
+                                us</span></a></li>
+                    <li><a href="mailto:info@shaheengorup.org"><i class="fa-regular fa-envelope"></i><span
+                                class="cont-text">Email</span></a></li>
+                </ul>
+            </div>
+            <div class="contact">
+                <form class="contact-frm">
+                    <h1>Submit Query</h1>
+                    <section class="in-section personal-det">
+                        <h4 class="section-legend">Personal Details</h4>
+                        <div class="contact-control">
+                            <label class="contact-fld-name" for="name">Name</label>
+                            <input type="text" name="name" id="name">
+                        </div>
+                        <div class="contact-control">
+                            <label class="contact-fld-name" for="phoneNumber">Phone Number</label>
+                            <input type="text" name="phoneNumber" id="phoneNumber">
+                        </div>
+                        <div class="contact-control">
+                            <label class="contact-fld-name" for="email">Email</label>
+                            <input type="email" name="email" id="email">
+                        </div>
+                    </section>
+                    <section class="in-section col-det">
+                        <h4 class="section-legend">Institutional Details</h4>
+                        <div class="contact-control">
+                            <label class="contact-fld-name" for="institution">Select Institution</label>
+                            <select name="institution" id="institution">
+                                <option value="-1">Please Select</option>
+                                <option value="School">School</option>
+                                <option value="PUCollegeCoaching">PU College Coaching</option>
+                                <option value="DegreeCollege">Degree College</option>
+                            </select>
+                        </div>
+                        <div class="contact-control">
+                            <label class="contact-fld-name" for="branch">Branch</label>
+                            <select name="branch" id="branch">
+                                <option value="-1">Please Select</option>
+                                <option value="School">School</option>
+                                <option value="PUCollegeCoaching">PU College Coaching</option>
+                                <option value="DegreeCollege">Degree College</option>
+                            </select>
+                        </div>
+                    </section>
+                    <section class="in-section query-det">
+                        <h4 class="section-legend">Query</h4>
+                        <div class="contact-control">
+                            <label class="contact-fld-name" for="query">Message</label>
+                            <textarea name="query" id="query" cols="30" rows="10"></textarea>
+                        </div>
+                    </section>
+                    <section class="action"><input type="submit" value="Submit" class="s-btn"></section>
+                </form>
+            </div>
+        </section>
+    </main>
     <footer>
         <div class="footer-info">
             <div class="address">
@@ -70,6 +131,7 @@
 
     </section> -->
     <script src="./content/scripts/common.js"></script>
+    <script src="./content/scripts/contact.js"></script>
 </body>
 
 </html>
