@@ -94,9 +94,16 @@ body > footer > div.footer-info {
   justify-items: center;
   align-items: center;
 }
+body > footer > div.footer-info > div.address {
+  text-align: center;
+}
 body > footer > div.footer-info > div.address > span.location-map {
   font-size: 3em;
   cursor: pointer;
+  margin-bottom: 20px;
+}
+body > footer > div.footer-info > div.address > span.location-map:hover {
+  color: var(--pri-color);
 }
 body > footer > div.footer-info > div.socials > ul {
   list-style: none;

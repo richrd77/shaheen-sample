@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,300;8..144,500;8..144,900&family=Russo+One&display=swap");
 
+@mixin common {
+    color: red !important;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -33,12 +37,14 @@ body {
         background-color: transparent;
         color: var(--pri-color);
         outline: none;
-        &:hover, &:focus {
+        &:hover,
+        &:focus {
             color: var(--bg-color);
             border: 1px solid var(--pri-color);
             background-color: var(--pri-color);
         }
-        &:active, &:focus {
+        &:active,
+        &:focus {
             box-shadow: 0 0 4px 0 var(--pri-color);
         }
     }
@@ -97,9 +103,14 @@ body {
             justify-items: center;
             align-items: center;
             > div.address {
+                text-align: center;
                 > span.location-map {
                     font-size: 3em;
                     cursor: pointer;
+                    margin-bottom: 20px;
+                    &:hover {
+                        color: var(--pri-color);
+                    }
                 }
                 > address {
                 }

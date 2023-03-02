@@ -10,12 +10,23 @@ main.contact-main > section.cont-wrapper {
   padding: 1em;
 }
 main.contact-main > section.cont-wrapper > div.branch-det {
+  animation: fade-l 0.5s ease-in 0s 1 forwards;
   border-radius: 4px;
   box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.0705882353);
   background-color: var(--card-bg-color);
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@keyframes fade-l {
+  from {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 main.contact-main > section.cont-wrapper > div.branch-det > ul.socials {
   list-style: none;
@@ -27,10 +38,21 @@ main.contact-main > section.cont-wrapper > div.branch-det > ul.socials > li > a 
   margin-left: 10px;
 }
 main.contact-main > section.cont-wrapper > div.contact {
+  animation: fade-r 0.5s ease-in 0s 1 forwards;
   border-radius: 4px;
   box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.0705882353);
   background-color: var(--card-bg-color);
   padding: 1em;
+}
+@keyframes fade-r {
+  from {
+    transform: translateX(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 main.contact-main > section.cont-wrapper > div.contact > form.contact-frm > h1 {
   text-align: center;

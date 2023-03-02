@@ -1,3 +1,6 @@
+// import animation
+@import './tranitions.scss';
+
 @mixin card {
     border-radius: 4px;
     box-shadow: 0 0 8px 0 #00000012;
@@ -16,6 +19,7 @@ main.contact-main {
         gap: 1em;
         padding: 1em;
         > div.branch-det {
+            @include fade-in-left();
             @include card();
             display: flex;
             justify-content: center;
@@ -43,6 +47,7 @@ main.contact-main {
             }
         }
         > div.contact {
+            @include fade-in-right();
             @include card();
             padding: 1em;
             > form.contact-frm {
