@@ -136,6 +136,26 @@ a.menu .hamburger::after {
   margin: 1em auto;
 }
 
+.s-card {
+  background-color: var(--bg-color);
+  min-height: 100px;
+  min-width: 150px;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 4px;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.3);
+}
+.s-card:hover {
+  box-shadow: 0 0 6px 0 var(--pri-color) !important;
+}
+.s-card > .s-card-heading {
+  font-size: 1.2rem;
+  text-transform: capitalize;
+}
+
 body {
   background-color: var(--pri-light-color);
   font-family: "Roboto Serif", serif;
@@ -147,6 +167,7 @@ body .emp-header {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  background-color: var(--pri-color);
 }
 body .emp-header > svg > text {
   transform: translate(0, 85px);
@@ -195,6 +216,9 @@ body > nav > div.s-nav-bg-cont > ul {
 }
 body > nav > div.s-nav-bg-cont > ul > li {
   margin: 0.5em 0;
+}
+body > nav > div.s-nav-bg-cont > ul > li > a {
+  text-transform: capitalize;
 }
 body > nav > div.s-nav-bg-cont > button.user-logoff {
   height: 42px;

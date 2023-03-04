@@ -35,10 +35,16 @@ a {
 .s-btn {
   padding: 0.5em 1em;
   cursor: pointer;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: 1px solid var(--pri-color);
   background-color: transparent;
   color: var(--pri-color);
-  outline: none;
+}
+.s-btn > .material-symbols-outlined {
+  margin-right: 5px !important;
 }
 .s-btn:hover, .s-btn:focus {
   color: var(--bg-color);
@@ -47,6 +53,29 @@ a {
 }
 .s-btn:active, .s-btn:focus {
   box-shadow: 0 0 4px 0 var(--pri-color);
+}
+
+.s-btn-warn {
+  padding: 0.5em 1em;
+  cursor: pointer;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--warn-color);
+  background-color: transparent;
+  color: var(--warn-color);
+}
+.s-btn-warn > .material-symbols-outlined {
+  margin-right: 5px !important;
+}
+.s-btn-warn:hover, .s-btn-warn:focus {
+  color: var(--bg-color);
+  border: 1px solid var(--warn-color);
+  background-color: var(--warn-color);
+}
+.s-btn-warn:active, .s-btn-warn:focus {
+  box-shadow: 0 0 4px 0 var(--warn-color);
 }
 
 div.s-control {
@@ -74,28 +103,53 @@ div.s-control > *:nth-child(2) {
   background-color: rgba(240, 240, 240, 0.2509803922);
 }
 
-.hamburger {
-  position: relative;
-  width: 30px !important;
+a.menu {
   cursor: pointer;
+  height: 32px;
+}
+a.menu .hamburger {
+  position: relative;
+  transform: translateY(15px);
+  width: 30px !important;
   margin-right: 50px !important;
 }
-.hamburger, .hamburger::before, .hamburger::after {
+a.menu .hamburger, a.menu .hamburger::before, a.menu .hamburger::after {
   height: 4px;
   width: 50px;
   background-color: var(--color);
   display: block;
 }
-.hamburger::before, .hamburger::after {
+a.menu .hamburger::before, a.menu .hamburger::after {
   content: "";
   position: absolute;
   left: 0;
 }
-.hamburger::before {
+a.menu .hamburger::before {
   top: -10px;
 }
-.hamburger::after {
+a.menu .hamburger::after {
   top: 10px;
+}
+
+.s-cont {
+  width: 85%;
+  margin: 1em auto;
+}
+
+.s-card {
+  background-color: var(--bg-color);
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.3);
+  min-height: 100px;
+  min-width: 200px;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.s-card > .s-card-heading {
+  font-size: 1.2rem;
+  text-transform: capitalize;
 }
 
 body {

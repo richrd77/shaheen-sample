@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,300;8..144,500;8..144,900&family=Russo+One&display=swap");
-@import "controls.scss";
+@import "./controls.scss";
 
 body {
     background-color: var(--pri-light-color);
@@ -11,6 +11,7 @@ body {
         display: flex;
         justify-content: flex-start;
         align-items: center;
+        background-color: var(--pri-color);
         > svg {
             > text {
                 transform: translate(0, 85px);
@@ -59,6 +60,7 @@ body {
                 > li {
                     margin: 0.5em 0;
                     > a {
+                        text-transform: capitalize;
                     }
                 }
             }

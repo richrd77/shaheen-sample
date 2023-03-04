@@ -133,4 +133,24 @@ a.menu .hamburger::after {
 .s-cont {
   width: 85%;
   margin: 1em auto;
+}
+
+.s-card {
+  background-color: var(--bg-color);
+  min-height: 100px;
+  min-width: 150px;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 4px;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.3);
+}
+.s-card:hover {
+  box-shadow: 0 0 6px 0 var(--pri-color) !important;
+}
+.s-card > .s-card-heading {
+  font-size: 1.2rem;
+  text-transform: capitalize;
 }/*# sourceMappingURL=controls.css.map */

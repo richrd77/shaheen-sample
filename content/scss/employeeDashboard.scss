@@ -1,0 +1,14 @@
+.row1 {
+    text-align: center;
+    > h1 {
+        font-size: 1.7rem;
+        margin-bottom: 1em;
+    }
+    div.s-card-holder {
+        display: grid;
+        grid-template-columns: 200px 200px;
+        grid-template-rows: 150px;
+        gap: 1em;
+        justify-content: center;
+    }
+}
