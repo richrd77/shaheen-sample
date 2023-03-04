@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,300;8..144,500;8..144,900&family=Russo+One&display=swap");
+@import "controls.scss";
+
+body {
+    background-color: var(--pri-light-color);
+    font-family: "Roboto Serif", serif;
+    .emp-header {
+        padding: 0 1.2em;
+        height: 5em;
+        @include s-shadow();
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        > svg {
+            > text {
+                transform: translate(0, 85px);
+                font-size: 1.4em;
+                font-family: "Russo One", sans-serif;
+            }
+        }
+    }
+    > main {
+        min-height: calc(100vh - 9em);
+    }
+    > .emp-footer {
+        min-height: 2em;
+        @include s-shadow();
+    }
+    > nav {
+        position: fixed;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 300px;
+        background-color: var(--bg-color);
+        transition: opacity 0.5s;
+        opacity: 0;
+        pointer-events: none;
+        @include s-shadow();
+        &.active {
+            pointer-events: all;
+            opacity: 1;
+        }
+        > div.s-nav-bg-cont {
+            background-color: var(--pri-light-color);
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2em;
+            padding: 3em 1em;
+            > h2 {
+                flex: 1;
+            }
+            > ul {
+                flex: 2;
+                list-style: none;
+                > li {
+                    margin: 0.5em 0;
+                    > a {
+                    }
+                }
+            }
+            > button.user-logoff {
+                height: 42px;
+                width: 130px;
+            }
+        }
+    }
+}

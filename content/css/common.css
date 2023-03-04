@@ -74,6 +74,30 @@ div.s-control > *:nth-child(2) {
   background-color: rgba(240, 240, 240, 0.2509803922);
 }
 
+.hamburger {
+  position: relative;
+  width: 30px !important;
+  cursor: pointer;
+  margin-right: 50px !important;
+}
+.hamburger, .hamburger::before, .hamburger::after {
+  height: 4px;
+  width: 50px;
+  background-color: var(--color);
+  display: block;
+}
+.hamburger::before, .hamburger::after {
+  content: "";
+  position: absolute;
+  left: 0;
+}
+.hamburger::before {
+  top: -10px;
+}
+.hamburger::after {
+  top: 10px;
+}
+
 body {
   font-family: "Roboto Serif", serif;
   background-color: var(--pri-light-color);
