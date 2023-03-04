@@ -217,6 +217,9 @@ body > nav > div.s-nav-bg-cont > ul {
 body > nav > div.s-nav-bg-cont > ul > li {
   margin: 0.5em 0;
 }
+body > nav > div.s-nav-bg-cont > ul > li:hover {
+  color: var(--pri-color);
+}
 body > nav > div.s-nav-bg-cont > ul > li > a {
   text-transform: capitalize;
 }

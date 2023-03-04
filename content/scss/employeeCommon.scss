@@ -59,6 +59,9 @@ body {
                 list-style: none;
                 > li {
                     margin: 0.5em 0;
+                    &:hover {
+                        color: var(--pri-color);
+                    }
                     > a {
                         text-transform: capitalize;
                     }
