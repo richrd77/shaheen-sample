@@ -167,3 +167,20 @@ a.menu {
         text-transform: capitalize;
     }
 }
+
+table.s-tbl {
+    border-collapse: collapse;
+    @include s-shadow();
+    td {
+        border: 1px solid;
+        padding: 0.25em 0.5em;
+    }
+    thead > tr,
+    thead > tr > td {
+        font-weight: 600;
+        background-color: var(--bg-color);
+    }
+    tr:nth-child(even) {
+        background-color: var(--bg-color);
+    }
+}

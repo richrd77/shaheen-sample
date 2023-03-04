@@ -156,6 +156,23 @@ a.menu .hamburger::after {
   text-transform: capitalize;
 }
 
+table.s-tbl {
+  border-collapse: collapse;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.3);
+}
+table.s-tbl td {
+  border: 1px solid;
+  padding: 0.25em 0.5em;
+}
+table.s-tbl thead > tr,
+table.s-tbl thead > tr > td {
+  font-weight: 600;
+  background-color: var(--bg-color);
+}
+table.s-tbl tr:nth-child(even) {
+  background-color: var(--bg-color);
+}
+
 body {
   background-color: var(--pri-light-color);
   font-family: "Roboto Serif", serif;
