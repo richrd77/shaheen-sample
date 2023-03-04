@@ -19,35 +19,74 @@
     --card-bg-color: #ffffff80;
 }
 
+.material-symbols-outlined {
+    font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+}
+
+.error {
+    > *:nth-child(1) {
+        color: red !important;
+        padding: 0 5px !important;
+        background-color: #f8fbf6 !important;
+    }
+    > *:nth-child(2) {
+        border: 1px solid red !important;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.s-btn {
+    padding: 0.5em 1em;
+    cursor: pointer;
+    border: 1px solid var(--pri-color);
+    background-color: transparent;
+    color: var(--pri-color);
+    outline: none;
+    &:hover,
+    &:focus {
+        color: var(--bg-color);
+        border: 1px solid var(--pri-color);
+        background-color: var(--pri-color);
+    }
+    &:active,
+    &:focus {
+        box-shadow: 0 0 4px 0 var(--pri-color);
+    }
+}
+
+div.s-control {
+    position: relative;
+    border: 1px solid #0000001f;
+    width: fit-content;
+    margin: 1em 0;
+    &:focus-within {
+        box-shadow: 0 0 4px 0 var(--pri-color);
+    }
+    > label.s-fld-name {
+        font-size: 0.7rem;
+        position: absolute;
+        top: -8px;
+        background-color: var(--pri-light-color);
+        padding: 0 1em;
+        z-index: 2;
+        user-select: none;
+    }
+    > *:nth-child(2) {
+        padding: 15px 10px;
+        border: transparent;
+        outline: none;
+        background-color: #f0f0f040;
+    }
+}
+
 body {
     font-family: "Roboto Serif", serif;
     background-color: var(--pri-light-color);
     overflow-x: hidden;
-    .material-symbols-outlined {
-        font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
-    }
-    a {
-        text-decoration: none;
-        color: inherit;
-    }
-    .s-btn {
-        padding: 0.5em 1em;
-        cursor: pointer;
-        border: 1px solid var(--pri-color);
-        background-color: transparent;
-        color: var(--pri-color);
-        outline: none;
-        &:hover,
-        &:focus {
-            color: var(--bg-color);
-            border: 1px solid var(--pri-color);
-            background-color: var(--pri-color);
-        }
-        &:active,
-        &:focus {
-            box-shadow: 0 0 4px 0 var(--pri-color);
-        }
-    }
+
     > header {
         box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.3);
         background-color: var(--pri-color);

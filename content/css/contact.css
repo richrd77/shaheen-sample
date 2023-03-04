@@ -82,32 +82,6 @@ main.contact-main > section.cont-wrapper > div.contact > form.contact-frm > sect
   padding: 0 1em;
   z-index: 2;
 }
-main.contact-main > section.cont-wrapper > div.contact > form.contact-frm > section.in-section > div.contact-control {
-  position: relative;
-  border: 1px solid rgba(0, 0, 0, 0.1215686275);
-  width: fit-content;
-  margin: 1em 0;
-}
-main.contact-main > section.cont-wrapper > div.contact > form.contact-frm > section.in-section > div.contact-control:focus-within {
-  box-shadow: 0 0 4px 0 var(--pri-color);
-}
-main.contact-main > section.cont-wrapper > div.contact > form.contact-frm > section.in-section > div.contact-control > label.contact-fld-name {
-  font-size: 0.7rem;
-  position: absolute;
-  top: -8px;
-  background-color: var(--pri-light-color);
-  padding: 0 1em;
-  z-index: 2;
-  user-select: none;
-}
-main.contact-main > section.cont-wrapper > div.contact > form.contact-frm > section.in-section > div.contact-control > input,
-main.contact-main > section.cont-wrapper > div.contact > form.contact-frm > section.in-section > div.contact-control select,
-main.contact-main > section.cont-wrapper > div.contact > form.contact-frm > section.in-section > div.contact-control textarea {
-  padding: 15px 10px;
-  border: transparent;
-  outline: none;
-  background-color: rgba(240, 240, 240, 0.2509803922);
-}
 main.contact-main > section.cont-wrapper > div.contact > form.contact-frm > section.action {
   text-align: right;
 }/*# sourceMappingURL=contact.css.map */

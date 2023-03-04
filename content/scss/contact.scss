@@ -83,32 +83,32 @@ main.contact-main {
                         padding: 0 1em;
                         z-index: 2;
                     }
-                    > div.contact-control {
-                        position: relative;
-                        border: 1px solid #0000001f;
-                        width: fit-content;
-                        margin: 1em 0;
-                        &:focus-within {
-                            box-shadow: 0 0 4px 0 var(--pri-color);
-                        }
-                        > label.contact-fld-name {
-                            font-size: 0.7rem;
-                            position: absolute;
-                            top: -8px;
-                            background-color: var(--pri-light-color);
-                            padding: 0 1em;
-                            z-index: 2;
-                            user-select: none;
-                        }
-                        > input,
-                        select,
-                        textarea {
-                            padding: 15px 10px;
-                            border: transparent;
-                            outline: none;
-                            background-color: #f0f0f040;
-                        }
-                    }
+                    // > div.contact-control {
+                    //     position: relative;
+                    //     border: 1px solid #0000001f;
+                    //     width: fit-content;
+                    //     margin: 1em 0;
+                    //     &:focus-within {
+                    //         box-shadow: 0 0 4px 0 var(--pri-color);
+                    //     }
+                    //     > label.contact-fld-name {
+                    //         font-size: 0.7rem;
+                    //         position: absolute;
+                    //         top: -8px;
+                    //         background-color: var(--pri-light-color);
+                    //         padding: 0 1em;
+                    //         z-index: 2;
+                    //         user-select: none;
+                    //     }
+                    //     > input,
+                    //     select,
+                    //     textarea {
+                    //         padding: 15px 10px;
+                    //         border: transparent;
+                    //         outline: none;
+                    //         background-color: #f0f0f040;
+                    //     }
+                    // }
                 }
                 > section.action {
                     text-align: right;

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="icon" type="image/x-icon" href="/content/img/logo.png">
+    <link rel="stylesheet" href="/content/css/common.css">
+    <style>
+        body {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #login-frm {
+            padding: 1em;
+            box-shadow: 0 0 4px 0 var(--pri-color);
+            border-radius: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <form id="login-frm">
+        <div class="s-control"><label for="uname" class="s-fld-name">User Name</label><input type="text" name="uname"
+                id="uname"></div>
+        <div class="s-control"><label for="pwd" class="s-fld-name">Password</label><input type="password" name="pwd"
+                id="pwd"></div>
+        <input type="submit" value="Login" class="s-btn">
+    </form>
+    <script>
+        document.querySelector('#login-frm').addEventListener('submit', (e) => {
+            document.querySelectorAll('.error').forEach(d => d.classList.remove('error'));
+            if ((!e.target.elements[0].value) || (!e.target.elements[1].value)) {
+                e.preventDefault();
+                if (!e.target.elements[0].value) {
+                    e.target.elements[0].closest('.s-control').classList.add('error');
+                }
+
+                if (!e.target.elements[1].value) {
+                    e.target.elements[1].closest('.s-control').classList.add('error');
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>
