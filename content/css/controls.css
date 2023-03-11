@@ -11,6 +11,7 @@
   --warn-color: red;
   --pri-light-color: #dfffc33b;
   --card-bg-color: #ffffff80;
+  --border-color: #0000001f;
 }
 
 .material-symbols-outlined {
@@ -77,11 +78,34 @@ a {
   box-shadow: 0 0 4px 0 var(--warn-color);
 }
 
+.s-btn-acent {
+  padding: 0.5em 1em;
+  cursor: pointer;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--color);
+  background-color: transparent;
+  color: var(--color);
+}
+.s-btn-acent > .material-symbols-outlined {
+  margin-right: 5px !important;
+}
+.s-btn-acent:hover, .s-btn-acent:focus {
+  color: var(--bg-color);
+  border: 1px solid var(--color);
+  background-color: var(--color);
+}
+.s-btn-acent:active, .s-btn-acent:focus {
+  box-shadow: 0 0 4px 0 var(--color);
+}
+
 div.s-control {
   position: relative;
   border: 1px solid rgba(0, 0, 0, 0.1215686275);
-  width: fit-content;
-  margin: 1em 0;
+  width: 100%;
+  height: 2.6em;
 }
 div.s-control:focus-within {
   box-shadow: 0 0 4px 0 var(--pri-color);
@@ -94,12 +118,20 @@ div.s-control > label.s-fld-name {
   padding: 0 1em;
   z-index: 2;
   user-select: none;
+  text-transform: capitalize;
+  font-family: inherit;
 }
 div.s-control > *:nth-child(2) {
   padding: 15px 10px;
   border: transparent;
   outline: none;
   background-color: rgba(240, 240, 240, 0.2509803922);
+  position: absolute;
+  inset: 0;
+  font-family: inherit;
+}
+div.s-control.textarea {
+  height: 4em;
 }
 
 a.menu {

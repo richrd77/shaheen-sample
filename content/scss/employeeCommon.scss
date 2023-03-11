@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,300;8..144,500;8..144,900&family=Russo+One&display=swap");
-@import "./controls.scss";
+@import "controls.scss";
+
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     background-color: var(--pri-light-color);
@@ -28,6 +32,7 @@ body {
         @include s-shadow();
     }
     > nav {
+        z-index: 100;
         position: fixed;
         left: 0;
         top: 0;

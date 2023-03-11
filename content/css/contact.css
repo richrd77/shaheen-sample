@@ -59,11 +59,12 @@ main.contact-main > section.cont-wrapper > div.contact > form.contact-frm > h1 {
   margin-bottom: 20px;
 }
 main.contact-main > section.cont-wrapper > div.contact > form.contact-frm > section.in-section {
-  border: 1px solid rgba(0, 0, 0, 0.1215686275);
+  border: 1px solid var(--border-color);
   margin: 1em 0;
   border-radius: 4px;
-  padding: 1em;
+  padding: 1.5em 1em;
   position: relative;
+  gap: 1em;
 }
 main.contact-main > section.cont-wrapper > div.contact > form.contact-frm > section.in-section:nth-child(2) {
   display: grid;

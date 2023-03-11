@@ -12,6 +12,7 @@
   --warn-color: red;
   --pri-light-color: #dfffc33b;
   --card-bg-color: #ffffff80;
+  --border-color: #0000001f;
 }
 
 .material-symbols-outlined {
@@ -81,8 +82,8 @@ a {
 div.s-control {
   position: relative;
   border: 1px solid rgba(0, 0, 0, 0.1215686275);
-  width: fit-content;
-  margin: 1em 0;
+  width: 100%;
+  height: 2.6em;
 }
 div.s-control:focus-within {
   box-shadow: 0 0 4px 0 var(--pri-color);
@@ -95,12 +96,20 @@ div.s-control > label.s-fld-name {
   padding: 0 1em;
   z-index: 2;
   user-select: none;
+  text-transform: capitalize;
+  font-family: inherit;
 }
 div.s-control > *:nth-child(2) {
   padding: 15px 10px;
   border: transparent;
   outline: none;
   background-color: rgba(240, 240, 240, 0.2509803922);
+  position: absolute;
+  inset: 0;
+  font-family: inherit;
+}
+div.s-control > textarea {
+  border: 2px solid red;
 }
 
 a.menu {
@@ -138,18 +147,39 @@ a.menu .hamburger::after {
 
 .s-card {
   background-color: var(--bg-color);
-  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.3);
   min-height: 100px;
-  min-width: 200px;
+  min-width: 150px;
   padding: 1em;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  border-radius: 4px;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.3);
+}
+.s-card:hover {
+  box-shadow: 0 0 6px 0 var(--pri-color) !important;
 }
 .s-card > .s-card-heading {
   font-size: 1.2rem;
   text-transform: capitalize;
+}
+
+table.s-tbl {
+  border-collapse: collapse;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.3);
+}
+table.s-tbl td {
+  border: 1px solid;
+  padding: 0.25em 0.5em;
+}
+table.s-tbl thead > tr,
+table.s-tbl thead > tr > td {
+  font-weight: 600;
+  background-color: var(--bg-color);
+}
+table.s-tbl tr:nth-child(even) {
+  background-color: var(--bg-color);
 }
 
 body {
