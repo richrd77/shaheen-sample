@@ -1,6 +1,21 @@
+h1.pg {
+  text-align: center;
+  text-transform: capitalize;
+}
+@media (max-width: 400px) {
+  h1.pg {
+    font-size: 1.75rem;
+  }
+}
+@media (max-width: 350px) {
+  h1.pg {
+    font-size: 1.5rem;
+  }
+}
+
 form.admission-frm > section.ad-sec {
   margin: 1.5em 0;
-  padding: 2.5em 1.5em;
+  padding: 2.5em;
   background-color: var(--bg-color);
   border-radius: 4px;
   box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.3);
@@ -9,6 +24,16 @@ form.admission-frm > section.ad-sec {
   grid-template-columns: 1fr 1fr 1fr;
   gap: 1.5em;
   align-items: flex-start;
+}
+@media (max-width: 1500px) {
+  form.admission-frm > section.ad-sec {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 900px) {
+  form.admission-frm > section.ad-sec {
+    grid-template-columns: 1fr;
+  }
 }
 form.admission-frm > section.ad-sec > h4.section-legend {
   position: absolute;
@@ -22,4 +47,14 @@ form.admission-frm > section.ad-sec > div.border {
   position: absolute;
   border: 1px solid var(--border-color);
   border-radius: 4px;
+}
+form.admission-frm > section.s-action {
+  display: flex;
+  gap: 1em;
+  justify-content: center;
+}
+@media (max-width: 680px) {
+  form.admission-frm > section.s-action {
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=admission-form.css.map */
