@@ -1,0 +1,83 @@
+h1.page-heading {
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 1em;
+}
+form#lessonFrm {
+    > section.lesson-sec {
+        padding: 1em;
+        background-color: white;
+        box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
+        border-radius: 4px;
+        > div.lesson-input {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1em;
+        }
+        > div.action {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 2em;
+            > button {
+                margin: 0 1em;
+            }
+            > button.s-btn-acent {
+                > span.material-symbols-outlined {
+                }
+                > span:nth-of-type(2) {
+                }
+            }
+            > button.s-btn {
+                > span.material-symbols-outlined {
+                }
+                > span:nth-of-type(2) {
+                }
+            }
+            > button.s-btn-warn {
+                > span.material-symbols-outlined {
+                }
+                > span:nth-of-type(2) {
+                }
+            }
+        }
+    }
+    > section.topic-wrapper {
+        margin: 1.5em auto;
+        max-width: 600px;
+        padding: 0 1em;
+        border: 1px solid #d8d8d8;
+        position: relative;
+        border-radius: 4px;
+        > h5 {
+            position: absolute;
+            top: -0.65em;
+        }
+        > div.topics {
+            > div.topic {
+                background-color: white;
+                margin: 1em 0;
+                padding: 1em;
+                box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
+                border-radius: 4px;
+                display: flex;
+                justify-content: space-between;
+                > span.topic-name {
+                    max-width: calc(100% - 30px);
+                    word-wrap: break-word;
+                }
+                > span.material-symbols-outlined {
+                    color: var(--warn-color);
+                    cursor: pointer;
+                }
+            }
+            > div.topic-empty {
+                background-color: white;
+                margin: 1em 0;
+                padding: 1em;
+                box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
+                border-radius: 4px;
+            }
+        }
+    }
+}
