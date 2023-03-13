@@ -15,6 +15,35 @@ form#lessonFrm > section.lesson-sec > div.lesson-input {
   grid-template-columns: 1fr 1fr;
   gap: 1em;
 }
+form#lessonFrm > section.lesson-sec > div.add-topic {
+  margin: 1em;
+  position: relative;
+  border: 1px solid #b3b3b3;
+  padding: 1em;
+}
+form#lessonFrm > section.lesson-sec > div.add-topic > h5.new-topic-heading {
+  position: absolute;
+  top: -0.65em;
+  left: 1em;
+  text-transform: capitalize;
+  background-color: white;
+  padding: 0 0.7em;
+}
+form#lessonFrm > section.lesson-sec > div.add-topic > div.new-topic {
+  display: grid;
+  max-width: 80%;
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
+  margin: 0 auto 1em;
+}
+form#lessonFrm > section.lesson-sec > div.add-topic > div.new-topic-action {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1em;
+  max-width: 80%;
+  margin: 0 auto;
+}
 form#lessonFrm > section.lesson-sec > div.action {
   display: flex;
   justify-content: center;
@@ -26,7 +55,7 @@ form#lessonFrm > section.lesson-sec > div.action > button {
 }
 form#lessonFrm > section.topic-wrapper {
   margin: 1.5em auto;
-  max-width: 600px;
+  max-width: 75%;
   padding: 0 1em;
   border: 1px solid #d8d8d8;
   position: relative;
@@ -45,9 +74,18 @@ form#lessonFrm > section.topic-wrapper > div.topics > div.topic {
   display: flex;
   justify-content: space-between;
 }
-form#lessonFrm > section.topic-wrapper > div.topics > div.topic > span.topic-name {
+form#lessonFrm > section.topic-wrapper > div.topics > div.topic > div.topic-det {
   max-width: calc(100% - 30px);
+  display: flex;
+  flex-direction: column;
+}
+form#lessonFrm > section.topic-wrapper > div.topics > div.topic > div.topic-det > span.topic-lesson {
   word-wrap: break-word;
+  font-weight: 600;
+}
+form#lessonFrm > section.topic-wrapper > div.topics > div.topic > div.topic-det > span.topic-name {
+  word-wrap: break-word;
+  font-size: 0.8rem;
 }
 form#lessonFrm > section.topic-wrapper > div.topics > div.topic > span.material-symbols-outlined {
   color: var(--warn-color);

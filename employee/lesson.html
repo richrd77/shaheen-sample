@@ -63,29 +63,39 @@
                         <input type="number" class="s-control">
                     </div>
                 </div>
+                <div class="add-topic">
+                    <h5 class="new-topic-heading">add new Topic</h5>
+                    <div class="new-topic">
+                        <div class="s-control">
+                            <label class="s-fld-name">Lesson</label>
+                            <input id="txt-topic-lesson" type="text" class="s-control">
+                        </div>
+                        <div class="s-control">
+                            <label class="s-fld-name">Topic</label>
+                            <input id="txt-topic-name" type="text" class="s-control">
+                        </div>
+                    </div>
+                    <div class="new-topic-action">
+                        <button class="s-btn-acent" type="button" id="btn-topic-add">
+                            <span class="material-symbols-outlined">add</span>
+                            <span>Add Topic</span>
+                        </button>
+                        <button class="s-btn-warn" type="button" id="btn-topic-clear">
+                            <span class="material-symbols-outlined">close</span>
+                            <span>Clear</span>
+                        </button>
+                    </div>
+                </div>
                 <div class="action">
-                    <button class="s-btn-acent" type="button">
-                        <span class="material-symbols-outlined">add</span>
-                        <span>Add Topic</span>
-                    </button>
                     <button class="s-btn" type="submit">
                         <span class="material-symbols-outlined">save</span>
                         <span>Save</span>
-                    </button>
-                    <button class="s-btn-warn" type="button">
-                        <span class="material-symbols-outlined">close</span>
-                        <span>Cancel</span>
                     </button>
                 </div>
             </section>
             <section class="topic-wrapper">
                 <h5>Topics</h5>
                 <div class="topics">
-                    <div class="topic"><span class="topic-name">Reproduction</span><span class="material-symbols-outlined">delete</span></div>
-                    <div class="topic"><span class="topic-name">Reproduction</span><span class="material-symbols-outlined">delete</span></div>
-                    <div class="topic"><span class="topic-name">Reproduction</span><span class="material-symbols-outlined">delete</span></div>
-                    <div class="topic"><span class="topic-name">Reprodssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssuction</span><span class="material-symbols-outlined">delete</span></div>
-                    <div class="topic"><span class="topic-name">Reproduction</span><span class="material-symbols-outlined">delete</span></div>
                     <div class="topic-empty">No Topics</div>
                 </div>
             </section>
@@ -107,6 +117,7 @@
         </div>
     </nav>
     <script src="/content/scripts/employeeCommon.js"></script>
+    <script src="/content/scripts/lesson.js"></script>
 </body>
 
 </html>

@@ -14,6 +14,59 @@ form#lessonFrm {
             grid-template-columns: 1fr 1fr;
             gap: 1em;
         }
+        > div.add-topic {
+            margin: 1em;
+            position: relative;
+            border: 1px solid #b3b3b3;
+            padding: 1em;
+            > h5.new-topic-heading {
+                position: absolute;
+                top: -0.65em;
+                left: 1em;
+                text-transform: capitalize;
+                background-color: white;
+                padding: 0 0.7em;
+            }
+            > div.new-topic {
+                display: grid;
+                max-width: 80%;
+                grid-template-columns: 1fr 1fr;
+                gap: 1em;
+                margin: 0 auto 1em;
+                > div.s-control:nth-of-type(1) {
+                    > label.s-fld-name {
+                    }
+                    > input.s-control {
+                    }
+                }
+                > div.s-control:nth-of-type(2) {
+                    > label.s-fld-name {
+                    }
+                    > input.s-control {
+                    }
+                }
+            }
+            > div.new-topic-action {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                gap: 1em;
+                max-width: 80%;
+                margin: 0 auto;
+                > button.s-btn-acent {
+                    > span.material-symbols-outlined {
+                    }
+                    > span:nth-of-type(2) {
+                    }
+                }
+                > button.s-btn-warn {
+                    > span.material-symbols-outlined {
+                    }
+                    > span:nth-of-type(2) {
+                    }
+                }
+            }
+        }
         > div.action {
             display: flex;
             justify-content: center;
@@ -44,7 +97,7 @@ form#lessonFrm {
     }
     > section.topic-wrapper {
         margin: 1.5em auto;
-        max-width: 600px;
+        max-width: 75%;
         padding: 0 1em;
         border: 1px solid #d8d8d8;
         position: relative;
@@ -62,9 +115,18 @@ form#lessonFrm {
                 border-radius: 4px;
                 display: flex;
                 justify-content: space-between;
-                > span.topic-name {
+                > div.topic-det {
                     max-width: calc(100% - 30px);
-                    word-wrap: break-word;
+                    display: flex;
+                    flex-direction: column;
+                    > span.topic-lesson {
+                        word-wrap: break-word;
+                        font-weight: 600;
+                    }
+                    > span.topic-name {
+                        word-wrap: break-word;
+                        font-size: 0.8rem;
+                    }
                 }
                 > span.material-symbols-outlined {
                     color: var(--warn-color);
