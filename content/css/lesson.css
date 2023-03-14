@@ -15,6 +15,11 @@ form#lessonFrm > section.lesson-sec > div.lesson-input {
   grid-template-columns: 1fr 1fr;
   gap: 1em;
 }
+@media (max-width: 1000px) {
+  form#lessonFrm > section.lesson-sec > div.lesson-input {
+    grid-template-columns: 1fr;
+  }
+}
 form#lessonFrm > section.lesson-sec > div.add-topic {
   margin: 1em;
   position: relative;
@@ -36,6 +41,11 @@ form#lessonFrm > section.lesson-sec > div.add-topic > div.new-topic {
   gap: 1em;
   margin: 0 auto 1em;
 }
+@media (max-width: 1000px) {
+  form#lessonFrm > section.lesson-sec > div.add-topic > div.new-topic {
+    grid-template-columns: 1fr;
+  }
+}
 form#lessonFrm > section.lesson-sec > div.add-topic > div.new-topic-action {
   display: flex;
   justify-content: flex-start;
@@ -43,6 +53,12 @@ form#lessonFrm > section.lesson-sec > div.add-topic > div.new-topic-action {
   gap: 1em;
   max-width: 80%;
   margin: 0 auto;
+}
+@media (max-width: 542px) {
+  form#lessonFrm > section.lesson-sec > div.add-topic > div.new-topic-action {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 form#lessonFrm > section.lesson-sec > div.action {
   display: flex;
@@ -61,6 +77,11 @@ form#lessonFrm > section.topic-wrapper {
   position: relative;
   border-radius: 4px;
 }
+@media (max-width: 1000px) {
+  form#lessonFrm > section.topic-wrapper {
+    max-width: 100%;
+  }
+}
 form#lessonFrm > section.topic-wrapper > h5 {
   position: absolute;
   top: -0.65em;
@@ -73,6 +94,11 @@ form#lessonFrm > section.topic-wrapper > div.topics > div.topic {
   border-radius: 4px;
   display: flex;
   justify-content: space-between;
+}
+@media (max-width: 1000px) {
+  form#lessonFrm > section.topic-wrapper > div.topics > div.topic {
+    flex-direction: column-reverse;
+  }
 }
 form#lessonFrm > section.topic-wrapper > div.topics > div.topic > div.topic-det {
   max-width: calc(100% - 30px);
@@ -90,6 +116,11 @@ form#lessonFrm > section.topic-wrapper > div.topics > div.topic > div.topic-det 
 form#lessonFrm > section.topic-wrapper > div.topics > div.topic > span.material-symbols-outlined {
   color: var(--warn-color);
   cursor: pointer;
+}
+@media (max-width: 1000px) {
+  form#lessonFrm > section.topic-wrapper > div.topics > div.topic > span.material-symbols-outlined {
+    text-align: right;
+  }
 }
 form#lessonFrm > section.topic-wrapper > div.topics > div.topic-empty {
   background-color: white;
