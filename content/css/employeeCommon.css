@@ -141,6 +141,9 @@ div.choice {
   align-items: center;
   background-color: rgba(240, 240, 240, 0.2509803922);
 }
+div.choice input {
+  opacity: 0;
+}
 div.choice > label.option {
   flex: 1;
   display: flex;

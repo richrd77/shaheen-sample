@@ -135,6 +135,9 @@ div.choice {
     display: flex;
     align-items: center;
     background-color: #f0f0f040;
+    input {
+        opacity: 0;
+    }
     > label.option {
         flex: 1;
         display: flex;
