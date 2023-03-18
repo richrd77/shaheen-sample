@@ -102,6 +102,7 @@ div.s-control {
     border: 1px solid #0000001f;
     width: 100%;
     height: 2.6em;
+    padding: 0 1em;
     &:focus-within {
         box-shadow: 0 0 4px 0 var(--pri-color);
     }
@@ -109,8 +110,8 @@ div.s-control {
         font-size: 0.7rem;
         position: absolute;
         top: -8px;
-        background-color: var(--pri-light-color);
-        padding: 0 1em;
+        background-color: var(--bg-color);
+        padding: 0 2px;
         z-index: 2;
         user-select: none;
         text-transform: capitalize;
@@ -127,6 +128,63 @@ div.s-control {
     }
     &.textarea {
         height: 4em;
+    }
+}
+
+div.choice {
+    display: flex;
+    align-items: center;
+    background-color: #f0f0f040;
+    > label.option {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        background-color: transparent;
+        padding: 0;
+        position: static;
+        cursor: pointer;
+        width: fit-content;
+        &:last-child {
+            flex: 2;
+        }
+        > span.option-control {
+            display: inline-block;
+            height: 1em;
+            width: 1em;
+            border: 1px solid var(--color);
+            border-radius: 50%;
+            margin-right: 5px;
+            position: relative;
+            &::before,
+            &::after {
+                content: "";
+                display: inline-block;
+                height: 0.6em;
+                width: 0.6em;
+                background-color: var(--pri-color);
+                position: absolute;
+                transition: opacity 0.3s ease-in-out;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                border-radius: 50%;
+                opacity: 0;
+            }
+
+            &::after {
+                transform: translate(-50%, -50%) scale(2.5);
+            }
+        }
+        &.checked {
+            > span.option-control {
+                &::before {
+                    opacity: 1;
+                }
+                &::after {
+                    opacity: 0.2;
+                }
+            }
+        }
     }
 }
 

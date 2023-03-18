@@ -33,3 +33,28 @@ window.onscroll = () => {
 const ShowScoller = () => document.querySelector('#scroller').classList.add('show');
 
 const HideScoller = () => document.querySelector('#scroller').classList.remove('show');
+
+document.querySelectorAll('.choice > label.option').forEach(e => e.addEventListener('click', (e) => {
+    const el = e.target.closest('label.option');
+    siblings(el).forEach(s => s.classList.remove('checked'));
+    el.classList.add('checked');
+}));
+
+function siblings(e) {
+    // for collecting siblings
+    let siblings = [];
+    // if no parent, return no sibling
+    if (!e.parentNode) {
+        return siblings;
+    }
+    // first child of the parent node
+    let sibling = e.parentNode.firstChild;
+    // collecting siblings
+    while (sibling) {
+        if (sibling.nodeType === 1 && sibling !== e) {
+            siblings.push(sibling);
+        }
+        sibling = sibling.nextSibling;
+    }
+    return siblings;
+}
